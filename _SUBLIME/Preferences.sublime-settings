@@ -1,0 +1,30 @@
+//------------------------------------------------------------------------------
+//  Author        : Cesar R. Urteaga-Reyesvera
+//  Description   : Personal sublime's settings.
+//  Assumption(s) : The required packages are the following:
+//                  Theme 3024
+//------------------------------------------------------------------------------
+
+{
+	//---------------------------------------------------------------- INTERACTION
+	"font_size": 10,
+	"bold_folder_labels": true,
+	"highlight_modified_tabs": true,
+	"color_scheme": "Packages/3024 Color Scheme/3024 Night.tmTheme",
+	"show_encoding": true,
+	"highlight_line": true,
+	"rulers": [80, 90, 100],
+
+	//---------------------------------------------------------------- FILE TRAITS
+	"default_encoding": "utf-8",
+	"tab_size": 2,
+	"translate_tabs_to_spaces": true,
+	"ensure_newline_at_eof_on_save": true,
+	"trim_trailing_white_space_on_save": true,
+
+	//--------------------------------------------------------------------- OTHERS
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+}

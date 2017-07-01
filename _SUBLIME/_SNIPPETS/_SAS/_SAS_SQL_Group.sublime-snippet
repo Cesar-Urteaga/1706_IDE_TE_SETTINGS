@@ -1,0 +1,18 @@
+<snippet>
+  <content><![CDATA[
+PROC SQL;
+  CREATE TABLE ${1:_OUTPUT_TABLE} AS
+    SELECT
+     DISTINCT
+              ${2:*}
+    FROM      ${3:_INPUT_TABLE}
+    GROUP BY  ${4:}
+              ${5:/* , */}
+  ;
+QUIT;
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>_QG</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.sas</scope>
+</snippet>

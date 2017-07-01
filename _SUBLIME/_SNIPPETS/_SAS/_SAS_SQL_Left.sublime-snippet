@@ -1,0 +1,21 @@
+<snippet>
+  <content><![CDATA[
+PROC SQL;
+  CREATE TABLE ${1:_OUTPUT_TABLE} AS
+    SELECT
+     DISTINCT
+              ${2:T01.*}
+              ${3:,T02.*}
+    FROM  ${4:_TABLE_A} AS T01
+      LEFT JOIN
+          ${5:_TABLE_B} AS T02
+      ON
+          STRIP(T01.${6:}) = STRIP(T02.${7:})
+  ;
+QUIT;
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>_QL</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.sas</scope>
+</snippet>

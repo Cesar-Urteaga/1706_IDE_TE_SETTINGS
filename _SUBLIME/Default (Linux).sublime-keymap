@@ -1,0 +1,72 @@
+//------------------------------------------------------------------------------
+//  Author        : Cesar R. Urteaga-Reyesvera
+//  Description   : Personal sublime's shortcuts.
+//  Assumption(s) : The required packages are:
+//                  Text Pastry
+//------------------------------------------------------------------------------
+
+[
+  //---------------------------------------------------------------- INTERACTION
+  //  Shows / hides the side bar
+  { "keys": ["ctrl+shift+s"], "command": "toggle_side_bar" },
+  //  Shows the command palette
+  { "keys": ["ctrl+shift+p"], "command": "show_overlay",
+                              "args": {"overlay": "command_palette"} },
+  //  Resizes panes (implicitly splits panes)
+  {
+    "keys": ["alt+shift+left"],
+    "command": "set_layout",
+    "args":
+    {
+      "cols": [0.0, 0.323, 1.0],
+      "rows": [0.0, 1.0],
+      "cells": [[0, 0, 1, 1], [1, 0, 2, 1]]
+    }
+  },
+  {
+    "keys": ["alt+shift+right"],
+    "command": "set_layout",
+    "args":
+    {
+      "cols": [0.0, 0.6785, 1.0],
+      "rows": [0.0, 1.0],
+      "cells": [[0, 0, 1, 1], [1, 0, 2, 1]]
+    }
+  },
+  //  Groups text
+  { "keys": ["alt+shift+d"], "command": "fold" },
+  { "keys": ["alt+shift+f"], "command": "unfold" },
+
+  //-------------------------------------------------------------------- EDITION
+  //  Changes the content
+  { "keys": ["ctrl+shift+u"], "command": "upper_case" },
+  { "keys": ["ctrl+shift+l"], "command": "lower_case" },
+  { "keys": ["ctrl+shift+x"], "command": "toggle_comment",
+                              "args": { "block": false } },
+  { "keys": ["ctrl+shift+z"], "command": "toggle_comment",
+                              "args": { "block": true } },
+  //  Paste
+  { "keys": ["ctrl+v"], "command": "paste_and_indent" },
+  { "keys": ["ctrl+shift+v"], "command": "paste" },
+
+  //------------------------------------------------------------------ Selection
+  //  Panes
+  //    Moves between panes
+  { "keys": ["ctrl+right"], "command": "next_view" },
+  { "keys": ["ctrl+left"], "command": "prev_view" },
+  //    Paragraphs
+  { "keys": ["alt+shift+e"], "command": "split_selection_into_lines" },
+  { "keys": ["alt+shift+l"], "command": "expand_selection",
+                              "args": {"to": "line"} },
+  { "keys": ["alt+shift+,"], "command": "expand_selection_to_paragraph" },
+  { "keys": ["alt+shift+up"], "command": "select_lines",
+                              "args": {"forward": false} },
+  { "keys": ["alt+shift+down"], "command": "select_lines",
+                                "args": {"forward": true} },
+
+  //---------------------------------------------------------------------- INPUT
+  { "keys": ["ctrl+shift+a"], "command": "show_panel",
+                              "args": {"panel": "console", "toggle": true} },
+  { "keys": ["alt+shift+n"], "command": "text_pastry_show_command_line",
+                             "args": { "text": "" } }
+]

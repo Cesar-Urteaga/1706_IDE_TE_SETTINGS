@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[
+%LET _M${1:G}${2:N}_${3:MacroName} = ${4:};
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>_MV</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.sas</scope>
+</snippet>

@@ -1,0 +1,26 @@
+<snippet>
+  <content><![CDATA[
+/*-----------------------------------------------------------------------------|
+| Description :                                                                |
+| Assumptions :                                                                |
+| Parameters  : X -                                                            |
+| Output      :                                                                |
+|-----------------------------------------------------------------------------*/
+/*  Examples:
+* Comments...
+%${1:MMacroName}...
+* Output:
+*/
+/*-----------------------------------------------------------------------------|
+| Date                Author    Description                                    |
+|------------------------------------------------------------------------------|
+| ${2:Month} ${3:DD}, ${4:YYYY}.     Raul      Creation.                                      |
+|-----------------------------------------------------------------------------*/
+%MACRO ${5:MMacroName}();
+%MEND ${6:MMacroName};
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>_MD</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.sas</scope>
+</snippet>

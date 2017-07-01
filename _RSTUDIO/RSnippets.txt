@@ -1,0 +1,10 @@
+# You should add this to the R snippets. In order to do this, please open
+# RStudio and go to Tools > Global Options... > Code > Edit Snippets... > R.
+# Once there, paste the following snippets (remember to include the tab at
+# the beginning).  You must use the `shift + tab` combination so as to work.
+
+snippet _
+	`r paste0("#", paste0(rep("-", 78 - nchar("$$") + ifelse(nchar("$$") != 0, 0, 1)), collapse = ""), ifelse(nchar("$$") != 0, " ", ""), toupper("$$"))`
+
+snippet _CH
+	`r paste0("# Author        : Cesar Raul Urteaga Reyesvera.\n", "# Creation date : ", format(Sys.time(), "%B %d, %Y."), "\n")`
