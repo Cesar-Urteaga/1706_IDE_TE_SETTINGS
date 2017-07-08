@@ -1,0 +1,14 @@
+<snippet>
+  <content><![CDATA[
+%PUT WARNING: CSV file was saved at: %SYSFUNC(GETOPTION(WORK));
+PROC EXPORT DATA    = ${1:}
+            OUTFILE = "%SYSFUNC(GETOPTION(WORK))/${2:CSV_TABLE}.csv"
+            DBMS    = CSV
+            REPLACE;
+RUN;
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>_EC</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.sas</scope>
+</snippet>

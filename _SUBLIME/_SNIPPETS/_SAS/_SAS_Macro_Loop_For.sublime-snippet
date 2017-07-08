@@ -1,0 +1,14 @@
+<snippet>
+  <content><![CDATA[
+%MACRO LOOP_FOR(ln);
+  %DO I = 1 %TO &ln.;
+    ${1:%PUT &I.;}
+  %END;
+%MEND LOOP_FOR;
+%LOOP_FOR(${2});
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>_MLF</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.sas</scope>
+</snippet>

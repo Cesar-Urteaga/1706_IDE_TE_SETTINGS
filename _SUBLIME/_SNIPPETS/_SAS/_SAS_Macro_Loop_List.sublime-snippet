@@ -1,0 +1,22 @@
+<snippet>
+  <content><![CDATA[
+%MACRO LOOP_LIST();
+  * List of elements. ;
+  %LET _MGT_LIST= ${1:E01 E02 E03 E04 E05 E06 E07 E08 E09 E10};
+  * Initial iteration. ;
+  %LET li = 1;
+  %LET iterator = %SCAN(&_MGT_LIST., &li);
+  %DO %WHILE(&iterator. ~=);
+    ${2:%PUT &iterator.;}
+    * Goes to the next element. ;
+    %LET li = %EVAL(&li. + 1);
+    %LET iterator = %SCAN(&_MGT_LIST., &li);
+  %END;
+%MEND LOOP_LIST;
+%LOOP_LIST;
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>_MLL</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.sas</scope>
+</snippet>
