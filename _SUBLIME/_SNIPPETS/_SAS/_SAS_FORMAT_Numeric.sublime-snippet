@@ -1,0 +1,14 @@
+<snippet>
+  <content><![CDATA[
+PROC FORMAT;
+  VALUE _TIPO_ATRIBUTOS
+${1:    0  = "Value for 0"
+    1  = "Value for 1"}    ${2:}
+  ;
+RUN;
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>_FN</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.sas</scope>
+</snippet>
