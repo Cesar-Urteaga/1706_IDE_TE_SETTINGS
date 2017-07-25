@@ -1,0 +1,14 @@
+<snippet>
+  <content><![CDATA[
+,CASE
+  WHEN (${1:CONDITION}) THEN
+    ${2:STATEMENT}
+  ELSE
+    ${3:DEFAULT}
+END AS ${4:VARIABLE}
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>_SS</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.sas</scope>
+</snippet>
