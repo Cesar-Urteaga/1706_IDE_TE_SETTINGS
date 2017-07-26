@@ -1,6 +1,6 @@
 ##  Favorite Settings & Snippets
 
-This project includes some of my favorites settings and snippets within some IDEs and text editors that I use on a regular basis.
+This project includes some of my favorites settings and snippets within the IDEs and text editors that I use on a regular basis.
 
 ##  Organization of the Files
 
