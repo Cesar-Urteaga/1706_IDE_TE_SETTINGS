@@ -1,0 +1,17 @@
+<snippet>
+  <content><![CDATA[
+#-------------------------------------------------------------------------------
+# Creation Date : ${1:Month} ${2:DD}, ${3:YYYY}.
+# Assumptions   : ${4:List the conditions that must be met so that the code works as it was designed}.
+# Description   : ${5:A brief description of what does the code do}.
+# Parameters    : ${6:Argument} - ${6:Description of the argument}.
+# Output        : ${7:Explain what is the output of your code}.
+#-------------------------------------------------------------------------------
+def ${8:function_name}():
+  ${9:}
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>_FD</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.python</scope>
+</snippet>

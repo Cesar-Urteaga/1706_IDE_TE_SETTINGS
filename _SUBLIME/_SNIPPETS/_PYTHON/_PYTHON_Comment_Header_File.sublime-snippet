@@ -1,0 +1,16 @@
+<snippet>
+  <content><![CDATA[
+#!/usr/bin/python3
+# In order to make this file executable in a unix os, execute the code below:
+# "chmod 755 GenerateFileWithMetadata.py"
+
+#-------------------------------------------------------------------------------
+#  Author        : ${1:Author's name}.
+#  Creation date : ${2:Month} ${3:DD}, ${4:YYYY}.
+#-------------------------------------------------------------------------------
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>_CH</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.python</scope>
+</snippet>
