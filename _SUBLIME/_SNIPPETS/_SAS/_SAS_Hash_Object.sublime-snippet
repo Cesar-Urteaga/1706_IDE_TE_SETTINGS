@@ -9,9 +9,9 @@ IF _N_ = 1 THEN
     ${5:HASH_OBJECT}.DEFINEKEY('${6:KEY_S}');
     ${7:HASH_OBJECT}.DEFINEDATA('${8:DATA}');
     ${9:HASH_OBJECT}.DEFINEDONE();
-    * Inicializamos las variables.;
-    CALL MISSING(${10:DATA});
   END;
+* Initialize the data variables. ;
+CALL MISSING(${10:DATA});
 SET
     ${11:DATA};
 ]]></content>
