@@ -1,7 +1,7 @@
 <snippet>
   <content><![CDATA[
 PROC FORMAT;
-  VALUE _TIPO_ATRIBUTOS
+  VALUE _TRAIT_TYPE
 ${1:    0  = "Value for 0"
     1  = "Value for 1"}    ${2:}
   ;
