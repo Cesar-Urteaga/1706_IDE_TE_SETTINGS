@@ -1,7 +1,7 @@
 <snippet>
   <content><![CDATA[
 /*
-  Author        : Raul.
+  Author        : Cesar Raul Urteaga-Reyesvera.
   Creation date : ${1:Month} ${2:DD}, ${3:YYYY}.
 */
 ]]></content>
