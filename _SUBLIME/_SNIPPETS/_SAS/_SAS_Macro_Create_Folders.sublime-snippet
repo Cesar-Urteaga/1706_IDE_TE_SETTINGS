@@ -1,0 +1,37 @@
+<snippet>
+  <content><![CDATA[
+%MACRO CREATE_FOLDERS();
+  * List of folders, beginning with the parent folder. ;
+  %LET _MGT_PARENT_FOLDER = ${1:_TEMPORAL_FOLDER};
+  %LET _MGT_LIST          = ${2:_01*_02*_03};
+  %LET li = 1;
+  %LET iterator = %SCAN(&_MGT_LIST., &li., *);
+  DATA _NULL_;
+    Parent = DCREATE("&_MGT_PARENT_FOLDER.", "%SYSFUNC(GETOPTION(WORK))");
+    %DO %WHILE(&iterator. ~=);
+      &iterator. = DCREATE("&iterator.", Parent);
+      /*
+         Change to 0 if you do not want to save the folders' path into global
+         macro variables.
+      */
+      %IF ${3:1} %THEN
+        %DO;
+          CALL SYMPUTX("&iterator.",
+                       "%SYSFUNC(GETOPTION(WORK))" ||
+                       "/&_MGT_PARENT_FOLDER./&iterator.",
+                       'G');
+        %END;
+      %LET li = %EVAL(&li. + 1);
+      %LET iterator = %SCAN(&_MGT_LIST., &li., *);
+    %END;
+    IF MISSING(Parent) THEN
+      PUT "WARNING: Folders were not created.";
+  RUN;
+%MEND CREATE_FOLDERS;
+%CREATE_FOLDERS;
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>_MCF</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.sas</scope>
+</snippet>
