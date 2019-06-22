@@ -2,7 +2,9 @@
 //  Author        : Cesar R. Urteaga-Reyesvera
 //  Description   : Personal sublime's shortcuts.
 //  Assumption(s) : The required packages are:
-//                  Text Pastry
+//                  - Text Pastry
+//                  - MarkdownPreview
+//                  - InsertDate
 //------------------------------------------------------------------------------
 
 [
@@ -49,7 +51,7 @@
   { "keys": ["ctrl+v"], "command": "paste_and_indent" },
   { "keys": ["ctrl+shift+v"], "command": "paste" },
 
-  //------------------------------------------------------------------ Selection
+  //------------------------------------------------------------------ SELECTION
   //  Panes
   //    Moves between panes
   { "keys": ["ctrl+right"], "command": "next_view" },
@@ -67,6 +69,18 @@
   //---------------------------------------------------------------------- INPUT
   { "keys": ["ctrl+shift+a"], "command": "show_panel",
                               "args": {"panel": "console", "toggle": true} },
+  // Requires the Text Pastry package.
   { "keys": ["alt+shift+n"], "command": "text_pastry_show_command_line",
-                             "args": { "text": "" } }
+                             "args": { "text": "" } },
+
+  //-------------------------------------------------------------------- PREVIEW
+  // Requires the MarkdownPreview package.
+  { "keys": ["alt+m"], "command": "markdown_preview",
+                        "args": {"target": "browser", "parser": "markdown"} },
+
+  //--------------------------------------------------------------------- INSERT
+  // Requires the InsertDate package.
+  // See https://packagecontrol.io/packages/InsertDate for more formats.
+ { "keys": ["ctrl+f5"], "command": "insert_date",
+                        "args": {"format": "%Y.%m.%d"} }
 ]
