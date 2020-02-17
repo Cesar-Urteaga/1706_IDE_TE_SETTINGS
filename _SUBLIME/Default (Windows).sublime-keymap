@@ -85,7 +85,7 @@
                         "args": {"format": "%Y.%m.%d"} },
   //-------------------------------------------------------------------- ARDUINO
   // Requires the Stino package:
-  // https://github.com/Robot-Will/Stino
-  // Builds the arduino code.
+  // See https://github.com/Robot-Will/Stino for more details.
   { "keys": ["alt+b"], "command": "stino_build" },
+  { "keys": ["alt+n"], "command": "stino_upload" },
 ]
