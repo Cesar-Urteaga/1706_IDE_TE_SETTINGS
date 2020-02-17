@@ -81,6 +81,11 @@
   //--------------------------------------------------------------------- INSERT
   // Requires the InsertDate package.
   // See https://packagecontrol.io/packages/InsertDate for more formats.
- { "keys": ["ctrl+f5"], "command": "insert_date",
-                        "args": {"format": "%Y.%m.%d"} }
+  { "keys": ["ctrl+f5"], "command": "insert_date",
+                        "args": {"format": "%Y.%m.%d"} },
+  //-------------------------------------------------------------------- ARDUINO
+  // Requires the Stino package:
+  // https://github.com/Robot-Will/Stino
+  // Builds the arduino code.
+  { "keys": ["alt+b"], "command": "stino_build" },
 ]
